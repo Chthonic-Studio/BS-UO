@@ -1,7 +1,4 @@
-﻿init 
-    
-
-define i = Character(_("Iara"), color="#F329D9")
+﻿define i = Character(_("Iara"), color="#F329D9")
 define b = Character(_("Blake"), color="#7B5A77")
 define s = Character(_("Soo-Yeon"), color="#93759F")
 define x = Character(_("Xesus"), color="#CC9900")

@@ -1,19 +1,19 @@
-Tue Sep 26 10:06:56 2023
+Wed Sep 27 12:05:12 2023
 Windows-10-10.0.19041
 Ren'Py 8.1.3.23091805
  
 
 Bootstrap to the start of init.init. took 0.06s
 Early init. took 0.00s
-Loader init. took 0.05s
-Loading error handling. took 0.09s
-Loading script. took 1.45s
-Loading save slot metadata. took 0.06s
+Loader init. took 0.04s
+Loading error handling. took 0.04s
+Loading script. took 0.29s
+Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
-Running init code. took 0.16s
-Loading analysis data. took 0.03s
+Running init code. took 0.12s
+Loading analysis data. took 0.02s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.01s
+Reloading save slot metadata. took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\uliru\\AppData\\Roaming/RenPy/backups\\Second Chance':
 Dump and make backups. took 0.09s
@@ -25,17 +25,17 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object. took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.01s
+Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.03s
+Save screen analysis took 0.02s
 Prepare screens took 0.09s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
 Performance test:
-Interface start. took 0.07s
+Interface start. took 0.06s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -47,3 +47,51 @@ Version: b'3.1.0 - Build 9.17.10.4459'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1379, 776) drawable=(1379, 776)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1452, 787) drawable=(1452, 787)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1452, 787) drawable=(1452, 787)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 100, in script
+    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'sooyeon' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 100, in script
+    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"
+Exception: Sayer 'sooyeon' is not defined.
+
+Full traceback:
+  File "game/script.rpy", line 105, in script
+    blake "Ah, that...I see"
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'blake' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 105, in script
+    blake "Ah, that...I see"
+Exception: Sayer 'blake' is not defined.
+
+Full traceback:
+  File "game/script.rpy", line 110, in script
+    iara "..."
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'iara' is not defined.
+
+While running game code:
+  File "game/script.rpy", line 110, in script
+    iara "..."
+Exception: Sayer 'iara' is not defined.

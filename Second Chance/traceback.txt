@@ -1,30 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 76, in script
-    show death in center
-Exception: Image 'death' does not accept attributes 'in center'.
+  File "game/script.rpy", line 110, in script
+    iara "..."
+Exception: Sayer 'iara' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 76, in script
-    show death in center
-  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1428, in execute
-    show_imspec(self.imspec, atl=getattr(self, "atl", None))
-  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 1391, in show_imspec
-    renpy.config.show(name,
-  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\exports.py", line 733, in show
-    if not base.find_target() and renpy.config.missing_show:
-  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\display\image.py", line 421, in find_target
-    self.target = target._duplicate(a)
-  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 499, in _duplicate
-    args.extraneous()
-  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\display\core.py", line 362, in extraneous
-    raise Exception("Image '{}' does not accept attributes '{}'.".format(
-Exception: Image 'death' does not accept attributes 'in center'.
+  File "game/script.rpy", line 110, in script
+    iara "..."
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'iara' is not defined.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.1.3.23091805
 Second Chance 1.0
-Sun Sep 24 22:51:16 2023
+Wed Sep 27 12:06:33 2023
