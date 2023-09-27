@@ -1,18 +1,22 @@
-﻿# The script of the game goes in this file.
+# The script of the game goes in this file.
 
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
 define i = Character(_("Iara"), color="#F329D9")
 define b = Character(_("Blake"), color="#7B5A77")
-define s = Character(_("Soo-Yeon"), color="#93759F")
+define s = Character(_("Soo-Yeon"), color="#411aac")
 define x = Character(_("Xesus"), color="#CC9900")
 define death = Character(_("Death"), color="#808080")
+
 
 
 # The game starts here.
 
 label start:
+
+    # Clear the game runtime timer, so it doesn't reflect time spent sitting at the main menu.
+    $ renpy.clear_game_runtime()
 
     scene blackscreen
     with fade
@@ -77,7 +81,7 @@ label start:
 
     death "Not really hell child, but close"
 
-    "There is a collective horrified scream at the sudden appearance of a ghostly visitor."
+    "There is a collective horrified scream at the sudden appearance of a ghostly visitor." with vpunch
 
     death "Ah, how the powers that be conspired together to bring you here"
 
@@ -90,5 +94,32 @@ label start:
     "With Death's words, the realization of mortality sweeped over them."
 
     death "You are now in Limbo, the realm between the living and the dead"
+
+    show sooyeon at left
+
+    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"  
+
+    hide sooyeon
+    show blake at right
+
+    blake "Ah, that...I see"
+
+    hide blake
+    show iara at right
+
+    iara "..."
+
+    "She looks sad, but also relieved in some way."
+
+    hide iara
+    show xesus at left
+
+    xesus "Hmmm..."
+
+    "His face is unreadable, but he seems to be thinking about something."
+
+    hide xesus
+
+    death "This is not the end for you though, "
 
     return
