@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 110, in script
-    iara "..."
-Exception: Sayer 'iara' is not defined.
+  File "game/script.rpy", line 100, in script
+    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"
+Exception: Sayer 'sooyeon' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 110, in script
-    iara "..."
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
+  File "game/script.rpy", line 100, in script
+    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"
+  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
     who = eval_who(self.who, self.who_fast)
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
+  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
     raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'iara' is not defined.
+Exception: Sayer 'sooyeon' is not defined.
 
 Windows-10-10.0.19041 AMD64
 Ren'Py 8.1.3.23091805
 Second Chance 1.0
-Wed Sep 27 12:06:33 2023
+Wed Sep 27 23:00:53 2023

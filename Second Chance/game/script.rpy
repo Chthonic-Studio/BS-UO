@@ -9,7 +9,7 @@ define s = Character(_("Soo-Yeon"), color="#411aac")
 define x = Character(_("Xesus"), color="#CC9900")
 define death = Character(_("Death"), color="#808080")
 
-
+image soulstone-inc = "soulstone-inc.png"
 
 # The game starts here.
 
@@ -85,41 +85,60 @@ label start:
 
     death "Ah, how the powers that be conspired together to bring you here"
 
-    "No introduction is needed, everyone present felt it the moment they were aware of the entity's presence, they were in fron of Death itself. A woman with skeletal features, whose voice rippled like spines of ice, cutting through the air with a chill."
+    "No introduction is needed, everyone present felt it the moment they were aware of the entity's presence, they were in front of Death itself. A woman with skeletal features, whose voice rippled like spines of ice, cutting through the air with a chill."
 
     death "I hold no joy of meeting you here in my domain, as for I would have rather spoken with you when your hair was gray and your memories of life far away, but alas, Fate has arranged for us to meet here in my abode"
 
     death "You, my dear children, have made the transition to the world of the dead, brought forth by none other than your own hands."
 
-    "With Death's words, the realization of mortality sweeped over them."
+    "With Death's words, the realization of mortality swept over them."
 
     death "You are now in Limbo, the realm between the living and the dead"
 
     show sooyeon at left
 
-    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"  
+    s "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"  
 
     hide sooyeon
     show blake at right
 
-    blake "Ah, that...I see"
+    b "Ah, that...I see"
 
     hide blake
     show iara at right
 
-    iara "..."
+    i "..."
 
     "She looks sad, but also relieved in some way."
 
     hide iara
     show xesus at left
 
-    xesus "Hmmm..."
+    x "Hmmm..."
 
     "His face is unreadable, but he seems to be thinking about something."
 
     hide xesus
 
-    death "This is not the end for you though, "
+    death "This is not the end though... Before you move on, I have a proposition for you four"
+
+    "A momentary flash of light brings them into a white room, where Death appears before them as a dark-robed woman."
+
+    "The room is empty, save for the four of them and the personification of Death. The walls, the ceiling, the floor, and even the drapes were all white."
+
+    "Death was the only thing that stood out, her dark robes and pale skin contrasting with the white room."
+
+    death "There are many lost souls, such as yourselves, wandering about the different areas of this realm, and I cannot do much to help them, as it would require me to forgo my other responsibilities." 
+    
+    death "So I would like to ask for your assistance"
+
+    show soulstone-inc at left 
+    with fade
+
+    "A small, pulsating bluish stone appears in Death's hand, and she shows it to the group."
+
+    death "What you see before you is the Soulstone, a vessel to hold the essence of those who are ready to leave this plane of existence, and move on to the afterlife."
+
+    death "owever, the vessel has lost the ability to sense who is truly ready to move on and who still has some business left here. Therefore, I ask you to find the missing shards and restore the stone"
 
     return

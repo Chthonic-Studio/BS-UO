@@ -1,36 +1,36 @@
-Wed Sep 27 12:05:12 2023
+Wed Sep 27 23:01:36 2023
 Windows-10-10.0.19041
 Ren'Py 8.1.3.23091805
  
 
-Bootstrap to the start of init.init. took 0.06s
+Bootstrap to the start of init.init. took 0.04s
 Early init. took 0.00s
-Loader init. took 0.04s
-Loading error handling. took 0.04s
-Loading script. took 0.29s
+Loader init. took 0.03s
+Loading error handling. took 0.03s
+Loading script. took 0.16s
 Loading save slot metadata. took 0.04s
 Loading persistent. took 0.00s
-Running init code. took 0.12s
-Loading analysis data. took 0.02s
+Running init code. took 0.05s
+Loading analysis data. took 0.01s
 Analyze and compile ATL. took 0.00s
-Reloading save slot metadata. took 0.02s
+Reloading save slot metadata. took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\uliru\\AppData\\Roaming/RenPy/backups\\Second Chance':
-Dump and make backups. took 0.09s
+Backing up script files to 'C:\\Users\\Indatech\\AppData\\Roaming/RenPy/backups\\Second Chance':
+Dump and make backups. took 0.05s
 Cleaning cache. took 0.00s
 Making clean stores. took 0.00s
 Initial gc. took 0.02s
-DPI scale factor: 1.000000
+DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object. took 0.00s
+nvdrs: Disabled thread optimizations.
+Creating interface object. took 0.53s
 Cleaning stores took 0.00s
 Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
+Save screen analysis took 0.03s
+Prepare screens took 0.06s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.03s
 Running _start took 0.00s
@@ -41,57 +41,16 @@ Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) HD Graphics 2000'
-Version: b'3.1.0 - Build 9.17.10.4459'
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce MX250/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.99'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1379, 776) drawable=(1379, 776)
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1452, 787) drawable=(1452, 787)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1920, 1017) drawable=(1920, 1017)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1452, 787) drawable=(1452, 787)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 100, in script
-    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'sooyeon' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 100, in script
-    sooyeon "That can't...No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No! No!"
-Exception: Sayer 'sooyeon' is not defined.
-
-Full traceback:
-  File "game/script.rpy", line 105, in script
-    blake "Ah, that...I see"
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'blake' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 105, in script
-    blake "Ah, that...I see"
-Exception: Sayer 'blake' is not defined.
-
-Full traceback:
-  File "game/script.rpy", line 110, in script
-    iara "..."
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 890, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\uliru\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 783, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'iara' is not defined.
-
-While running game code:
-  File "game/script.rpy", line 110, in script
-    iara "..."
-Exception: Sayer 'iara' is not defined.
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.01s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
