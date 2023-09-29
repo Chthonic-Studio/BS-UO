@@ -93,7 +93,7 @@ label start:
 
     "With Death's words, the realization of mortality swept over them."
 
-    death "You are now in Limbo, the realm between the living and the dead"
+    death "You are now in Limbo, the realm between the living and the dead, a place for those that have yet to leave their past lives behind"
 
     show sooyeon at left
 
@@ -129,6 +129,8 @@ label start:
     "Death was the only thing that stood out, her dark robes and pale skin contrasting with the white room."
 
     death "There are many lost souls, such as yourselves, wandering about the different areas of this realm, and I cannot do much to help them, as it would require me to forgo my other responsibilities." 
+
+    death "You have just arrived, and your minds are still fresh, unburdened by repeating the woes that plagued your mortal lives."
     
     death "So I would like to ask for your assistance"
 
@@ -139,6 +141,12 @@ label start:
 
     death "What you see before you is the Soulstone, a vessel to hold the essence of those who are ready to leave this plane of existence, and move on to the afterlife."
 
-    death "owever, the vessel has lost the ability to sense who is truly ready to move on and who still has some business left here. Therefore, I ask you to find the missing shards and restore the stone"
+    death "However, this vessel has lost the ability to sense between those that are truly ready to move on and those that are not ready to advance forward. Therefore, I ask you to find the missing shards and restore the stone"
+
+    "There's a moment of silence as the group takes in the information, which there's a lot of."
+
+    death "I will not force you to undertake this task, but I will ask that you consider it throughly, as it will be the only way for you to ascend to the afterlife without taking the pilgrimage that all souls that reach this place the same way you did must take."
+
+    
 
     return
