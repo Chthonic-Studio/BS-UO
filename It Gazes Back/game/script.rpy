@@ -19,8 +19,8 @@ define flash = Fade(.25, 0.0, .75, color="#fff")
 
 # Definitions of values
 
-$ health = 5
-$ sanity = 5
+default health = 5
+default sanity = 5
 
 # The game starts here.
 

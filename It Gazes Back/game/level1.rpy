@@ -470,6 +470,7 @@ label b_dining_hall:
             
             "With a powerful stomp, Mr. Han crushed the creature instantly, scateering blood all around as if it had been made purely out of gore."
 
+            hide gazer baby
             with flash
 
             han "You have to run now boy"

@@ -13,6 +13,7 @@ define yselle = Character(_("Yselle"), color="#074325")
 define dramatic = Dissolve(4.0)
 image alieneye = "alieneye.png"
 image eye = "the_eye.png"
+image gazer = "gazer.png"
 define flash = Fade(.25, 0.0, .75, color="#fff")
 
 # Variables
@@ -262,10 +263,103 @@ label living_quarters:
 
     scene bloody_corridor_5 with dramatic
 
-    "Quinn took a glance from the slits in the door, and found that this room looked particularly untouched, there is no one to be seen."
+    "Quinn took a glance from the slits in the door, checking if there was anyone near."
+
+    "Even though it was an empty corridor, there was some debris on the floor, and the walls were covered in blood."
+
+    "Normally, he would have checked out a bit more throughly, spent a few more moments to make sure there was no one around, but he was in a hurry to get out of that enclosed space."
 
     show quinn at right
 
     q "Finally, an open space to breathe..."
 
-    "He steps out of the shaft with confidence, and looks around a bit more."
+    "He steps out of the shaft with little confidence, and looks around a bit more."
+
+    "This is the living quarters, where most of the crew members sleep. It's a large area, with many rooms, and a few common areas."
+
+    "The bad thing, the next shaft was on the other side of the corridor, and he would have to cross it to get there."
+
+    "He took a deep breath to calm himself down."
+
+    show quinn worried at right
+
+    q "I have to keep quiet..."
+
+    "Quinn knew he didn't have the luxury of time on his side, so he started moving forward."
+
+    "Each step was filled with an endless amount of fear, as he could see the bloody marks left everywhere in the corridor, in the floor, the walls, even the ceiling was full of them."
+
+    "He worried about the cause behind all this carnage, what manner of creature would be able to do so much destruction in so little time."
+
+    "As Quinn worried about such things, he found himself in the corner of the corridor. He had to turn left here to get to the shaft leading to the docks."
+
+    "He knew better than to just stroll there, so he kneeled and peeked carefully at the other side."
+
+    scene bloody_corridor_1 with fade
+
+    show quinn worried at right
+
+    "A small figure was standing right in the middle of the corridor. It looks like a child but there was no way to really be sure due to the darkness that enveloped the whole area."
+
+    "The most worrying thing was that it was standing in front of the shaft's entrance."
+
+    "If Quinn was to do anything, he'd have to do it fast."
+
+    menu:
+
+        "Sprint and tackle the figure to enter the shaft":
+
+            "Quinn knew he had to act fast, so he decided to just go for it."
+
+            "Without thinking in the details, he sprinted towards the figure, and tackled it to the ground without much resistance."
+
+            "The figure crashed near the entrance to the shaft, and its head hit the floor with a loud thud."
+
+            "Quinn looked at the face belonging to that figure, and he felt his heart stop for a moment."
+
+            "It was indeed a kid, no more than 10 years old, with a bloody face and a blank stare."
+
+            "There weren't many kids in the ship, and Quinn knew most of them. This one was Alan's son, Ricky."
+
+            "Quinn felt sick to his stomach at the thought of possibly having killed a kid, but immediately after the thought entered his head, he felt shivers down his spine."
+
+            "There were other similar shadowy figures standing in the corridor, and even though one could not see their eyes, Quinn knew they were all looking at him."
+            
+            "He looked at Ricky again, and he saw that the eyes were not blank, they were looking at him, and they were full of hate and a bright color red."
+
+            show eye at truecenter
+            with flash
+            hide eye
+            show eye at truecenter
+            with flash
+            hide eye
+
+            $ sanity -= 1
+
+            "The eye, once again, appeared inside of his own mind."
+
+            "Quinn grabbed his head in pain, as if a screwdriver was being slowly pushed into it, but luckly it subsided faster than before."
+
+            "He hurried to enter the shaft, as he could hear the footsteps of the other figures approaching him."
+
+            "He entered the shaft and closed the door behind him, and he could hear the figures banging on the door, trying to get in."
+
+            "But after a few seconds, the banging stopped, and everything went silent."
+
+            "Quinn was tempted to peek through the slits in the door, but he remembered the words of the letter, and decided against it, continuing towards the docks."
+
+            jump fork2  
+
+        "Try to sneak past the figure":
+
+            "Quinn knew he had to act fast, so he decided to just go for it."
+
+            "He kept to the shadows as much as possible, and avoided the direction of where it appeared that it was looking at."
+            
+               
+        
+        "Attempt to identify the figure":
+
+
+
+
