@@ -51,7 +51,7 @@ label fork1:
         
         "But his efforts paid off, as he finally reached the entrance to the docks."
     
-    jump dockentrance with dissolve
+    jump dockentrance
 
 label fork2:
 
@@ -85,7 +85,7 @@ label fork2:
         
         "But his efforts paid off, as he finally reached the entrance to the docks."
     
-    jump dockentrance with dissolve
+    jump dockentrance
 
 
 label dockentrance:
