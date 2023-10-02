@@ -26,6 +26,8 @@ label tunnels_logan:
 
     scene tunnels_logan with dramatic
 
+    $ s_logan = True
+
     "An unknown amout of time passes before Quinn manages to wake up"
 
     show quinn at right
@@ -274,14 +276,14 @@ label corridor1:
 
                     "He had to move, quickly."
 
-                    with fade
-
                     jump corridor3
 
 
 label tunnels_yselle:
 
     scene tunnels_yselle with dramatic
+
+    $ s_yselle = True
 
     "An unknown amout of time passes before Quinn manages to wake up"
 

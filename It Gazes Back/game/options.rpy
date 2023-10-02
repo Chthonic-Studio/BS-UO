@@ -144,6 +144,7 @@ default preferences.afm_time = 15
 ## literal string, not an expression.
 
 define config.save_directory = "ItGazesBack-1696039724"
+define config.has_autosave = True
 
 
 ## Icon ########################################################################

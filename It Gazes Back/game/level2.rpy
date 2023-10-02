@@ -138,7 +138,7 @@ label cameraroom:
 
             "Quinn smiled wryly, and entered the shaft."
 
-            jump fork1
+            jump fork
 
         "Take a quick glance":
 
@@ -178,7 +178,7 @@ label cameraroom:
 
             "He could not make sense of the words of Han, but he decided it would be best to heed them. Honoring his last words, Quinn went in the shaft without trying to look to the cameras again."
 
-            jump fork1
+            jump fork
 
         "Look throughly so you have a better chance":
 
@@ -225,7 +225,7 @@ label cameraroom:
 
             "He could not make sense of the words of Han, but he decided it would be best to heed them. Honoring his last words, Quinn went in the shaft without trying to look to the cameras again."
 
-            jump fork1
+            jump fork
 
 label corridor4:
 
@@ -352,7 +352,7 @@ label living_quarters:
 
             "Quinn was tempted to peek through the slits in the door, but he remembered the words of the letter, and decided against it, continuing towards the docks."
 
-            jump fork2  
+            jump fork  
 
         "Try to sneak past the figure":
 
@@ -386,5 +386,5 @@ label living_quarters:
 
             "Quinn closed the door behind him, and he could hear the laughter of the kid echoing through the shaft as he hurried towards the docks."
 
-            jump fork2
+            jump fork
         

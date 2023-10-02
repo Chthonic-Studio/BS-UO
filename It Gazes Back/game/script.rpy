@@ -21,7 +21,10 @@ define flash = Fade(.25, 0.0, .75, color="#fff")
 
 default health = 5
 default sanity = 5
+default s_logan = False
+default s_yselle = False
 
+$ _skipping = False
 # The game starts here.
 
 label start:
