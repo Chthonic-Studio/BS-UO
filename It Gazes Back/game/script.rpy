@@ -59,7 +59,7 @@ label start:
 
     q "Yeah, I know what you mean. I'm just glad we're not on a military ship. I hear they have to deal with pirates and stuff."
 
-    l "I think I would prefer it there. Here it's like we're on a never-ending loop. Fixing broken equipment, checking inventory, and all that jazz."
+    l "I think I would prefer it there. Here it's like we're on a never-ending loop. Fixing broken equipment, checking inventory, and all that jazz. I'm surprised you've lasted this long, with your claustrophobia and all."
 
     "The sound of the intense hammering from the other side of the cargo bay suddenly intensifies."
 

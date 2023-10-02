@@ -17,6 +17,8 @@ image gazer baby = "gazer_baby.png"
 image yselle_note = "ysellenote.png"
 image logan_note = "loganote.png"
 define flash = Fade(.25, 0.0, .75, color="#fff")
+define redflash = Fade(.25, 0.0, .75, color="#bc1212")
+
 
 # The game starts here.
 
@@ -202,10 +204,16 @@ label corridor1:
             $ sanity -= 1
             $ health -= 1
 
+            with redflash
+            
             "Quinn felt something piercing his shoulder, and he felt his body go numb. He looked at his shoulder, and saw a knife sticking out of it."
 
+            with vpunch
+            
             "He pushed Alan back, and empowered by pure adrenaline, managed to even make him tumble to the ground. Quinn used this moment to get inside the shaft and close it behind him."
 
+            hide alan
+            
             "He started crawling as fast as possible to get away from him, but he noticed after a few seconds that Alan was not pursuing him."
 
             "Why was that, he did not understand, but he was grateful of it. "

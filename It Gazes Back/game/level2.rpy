@@ -15,10 +15,12 @@ image alieneye = "alieneye.png"
 image eye = "the_eye.png"
 image gazer = "gazer.png"
 define flash = Fade(.25, 0.0, .75, color="#fff")
+define redflash = Fade(.25, 0.0, .75, color="#bc1212")
 
 # Variables
 
-$ saw_gazer = false
+default saw_gazer = False
+default tip = False
 
 # The game starts here.
 
@@ -160,6 +162,7 @@ label cameraroom:
             hide eye
 
             $ sanity -= 1
+            $ tip = True
 
             "The eye, once again, appeared inside of his own mind."
 
@@ -201,9 +204,10 @@ label cameraroom:
             show eye at truecenter
             with flash
             hide eye
+            hide gazer
 
             $ sanity -= 2
-            $ saw_gazer = true
+            $ saw_gazer = True
 
             "The eye, once again, appeared inside of his own mind."
 
@@ -225,7 +229,7 @@ label cameraroom:
 
 label corridor4:
 
-    scene bloody_corridor_4 with dramatic
+    scene bloody_corridor_8 with dramatic
 
     "He knew that he had to keep moving, but the claustrophobia was getting to him. He felt like the walls were closing in on him, and he couldn't breathe."
 
@@ -355,11 +359,32 @@ label living_quarters:
             "Quinn knew he had to act fast, so he decided to just go for it."
 
             "He kept to the shadows as much as possible, and avoided the direction of where it appeared that it was looking at."
+
+            "He managed to get a few steps away from the entrance of the shaft, but then he heard a voice."
+
+            "???" "Don't leave, come and see..."
+
+            "Quinn's heart skipped a beat, and he turned around to see another figure standing right in front of him, followed by a sharp pain in his stomach."
+
+            with redflash
             
-               
+            "A pair of scissors were sticking out of his stomach, and he could feel how the blood started dripping from the wound."
+
+            $ health -= 1
+
+            "He looked at the face belonging to that figure, and it was a kid. No more than 10 years old, with a bloody face and a blank stare."
+
+            "His skin was pale and translucent, and his veins pulsed with a dark energy. His eyes were like two pools of blood, and his lips were curled into a cruel smile."
+            
+            "He recognized the kid, Horace, the grandkid of Miss Ladeeva, and one of the few kids in the ship."
+
+            "Quinn's survival instincts reacted, and he pushed Horace away from him with force, and ran towards the shaft."
+
+            "The kid fell to the ground, and Quinn could hear him laughing as he entered the shaft."
+
+            "Horace" "Come back soon, I'll be waiting for you..."
+
+            "Quinn closed the door behind him, and he could hear the laughter of the kid echoing through the shaft as he hurried towards the docks."
+
+            jump fork2
         
-        "Attempt to identify the figure":
-
-
-
-
