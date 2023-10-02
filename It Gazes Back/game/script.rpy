@@ -44,6 +44,8 @@ label start:
     scene cargobay
     with fade
 
+    play music "workshop.ogg"
+
     show quinn at right
 
     q "Sure, here you go. So, how's the day treating you?"
@@ -180,6 +182,8 @@ label dininghall:
 
     "Due to the amount of people in front of them, they are not able to see the reason for all the fuzz, but Quinn manages to get a glance at something."
 
+    stop music fadeout 3.0
+
     hide alan
     hide yselle
     hide logan
@@ -187,6 +191,8 @@ label dininghall:
     with dramatic
 
     "A red eye, sitting inside a ball of bloody flesh"
+
+    play music "ambient_scare.ogg"
 
     with vpunch
 

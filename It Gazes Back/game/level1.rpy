@@ -208,6 +208,8 @@ label corridor1:
 
             with redflash
             
+            play sound "stab.ogg"
+            
             "Quinn felt something piercing his shoulder, and he felt his body go numb. He looked at his shoulder, and saw a knife sticking out of it."
 
             with vpunch

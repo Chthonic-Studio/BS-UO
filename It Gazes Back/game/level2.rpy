@@ -370,6 +370,8 @@ label living_quarters:
             
             "A pair of scissors were sticking out of his stomach, and he could feel how the blood started dripping from the wound."
 
+            play sound "slash.ogg"
+
             $ health -= 1
 
             "He looked at the face belonging to that figure, and it was a kid. No more than 10 years old, with a bloody face and a blank stare."

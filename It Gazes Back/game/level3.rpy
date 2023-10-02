@@ -24,6 +24,8 @@ label fork:
 
     scene bloody_corridor_2 with dramatic
 
+    play music "horror.ogg"
+
     "He had managed to get here, only a few more steps to get to the docks."
 
     if sanity < 3:
@@ -154,6 +156,8 @@ label defend:
 
     with redflash
 
+    play sound "slash.ogg"
+
     q "AAAAAAHHH!!!"
 
     "Blood started to pour out of the wound, and Alan, acting like nothing had just happened."
@@ -168,8 +172,12 @@ label defend:
 
         with hpunch
 
+        play sound "slash.ogg"
+
         "He grabs his neck, trying to stop the bleeding, but Alan leaps at him and starts stabbing him repeatedly in the chest, with so much force that Quinn's body is lifted off the ground with each stab."
 
+        play sound "slash.ogg"
+   
         "In the end, Quinn's chest is caved in, with a gaping hole in the middle of it."
 
         "As he dies, he can see Alan's face, which is now covered in his blood, and he can see that Alan is smiling, as if he had found peace."
@@ -256,8 +264,12 @@ label dodgedisarm:
 
     with redflash
 
+    play sound "slash.ogg"
+
     "He grabs his neck, trying to stop the bleeding, but Alan leaps at him and starts stabbing him repeatedly in the chest, with so much force that Quinn's body is lifted off the ground with each stab."
 
+    play sound "slash.ogg"
+    
     "In the end, Quinn's chest is caved in, with a gaping hole in the middle of it."
 
     "As he dies, he can see Alan's face, which is now covered in his blood, and he can see that Alan is smiling, as if he had found peace."
@@ -275,6 +287,8 @@ label hitdisarm:
     $ health -= 3
     
     with redflash
+
+    play sound "slash.ogg"
 
     if health < 1:
 
@@ -311,10 +325,12 @@ label stabdisarm:
     "Quinn stabs Alan in the chest with the glass shard, and Alan doesn't stop moving, so Quinn stabs him again."
 
     with redflash
+    play sound "slash.ogg"
 
     "And again."
 
     with redflash
+    play sound "slash.ogg"
 
     "And again."
 
@@ -323,6 +339,7 @@ label stabdisarm:
         "And again."
 
         with redflash
+        play sound "slash.ogg"
 
         "Then Quinn gets down on his knees and starts stabbing Alan in the face, over and over again, until Alan's face is nothing but a bloody mess."
 
@@ -346,6 +363,7 @@ label stabdisarm:
 
         "Quinn keeps tightening his grip, and Alan's head explodes, covering Quinn in blood and brain matter."
 
+        play sound "crush.gg"
         show gazer at truecenter
         with flash
         hide eye
