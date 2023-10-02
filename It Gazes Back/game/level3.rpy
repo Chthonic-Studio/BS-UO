@@ -572,15 +572,329 @@ label logan_ending:
 
         "The ship started to move, floating in the air, and the hole in the door had gotten bigger by the creature that was using its massive strength to break through."
 
+    menu: 
+
+        "Leave with the rest":
+
+            "Quinn would have leaped towards that kid to help him in a heartbeat, had not the recent events left a scar in his mind."
+
+            "He knew in the back of his mind that he would not be able to help him, and that he would only be able to die with him."
+
+            show gazer angry at truecenter
+            with dissolve
+
+            a "WRAAAAAAAAAAAAAAA!!!"
+
+            "They could hear the beast enraged scream, perhaps at the fact that it had lost its prey."
+
+            "Quinn was tempted to look at it, but he knew better than that by now."
+
+            "The ship finally left the docks, and seconds later, had already escaped the ship."
+
+            "He was finally safe, but he could not help but feel like this was not a win."
+
+            "All those deaths...Yselle..."
+
+            l "We made it...Shit, we made it"
+
+            "But at least, he was not alone."
+
+            q "Why cuss at that?"
+
+            l "I...I don't know, I just want to rest..."
+
+            q "I'm never going back to space..."
+
+            "After going through hell, they were finally safe."
+
+            "..."
+
+            "{i}Or were they{/i}"
+
+
+        "Save the kid":
+
+            jump sacrifice
 
  
 label yselle_ending:
 
+    scene normal_docks with dramatic
 
+    "Yselle was standing in front of him, and she was alive."
+
+    show yselle scared at left
+
+    y "Quinn! Oh god thank you, you're alive"
+
+    q "Yselle!"
+
+    "He ran to her and embraced her. They usually would have refrained from such demonstrations of affection but they couldn't care about that right now."
+
+    "For the first time in a while, Quinn felt hope."
+
+    "He went past the door, which was immediately shut behind him, and he was greeted by the sight of the rest of the surviving crew."
+
+    "It was a small group, probably around 20 people, less than 10% of the total crewmembers."
+
+    "A small escape pod was in the middle of the room, and it was clear that they were preparing to abandon the ship."
+
+    "There was one person missing though..."
+
+    q "Where's Logan?"
+
+    "Yselle's face visibly darkened, and she looked pained."
+
+    y "He's... he died. He was killed by that thing."
+
+    if saw_gazer == True:
+
+        q "That creature with fangs?"
+
+        y "What do you mean by fangs...oh, no, you saw it? Did you look at it?"
+
+        q "Yes, on one of the cameras... why?"
+
+        y "No no no! That thing has somehow killed just the ones that have seen it..."
+
+        "Immediately after Logan said that, a loud thud was heard from the gate, and a dent the size of a fist was in the middle of it."
+
+        with hpunch
+
+        y "What is that?!"
+
+        "Crewmember" "It's that beast! It decided to attack!"
+
+        "Crewmember" "Why now?!"
+
+        y "It somehow knows we're about to leave... we have to go now!"
+
+        q "What should I do?"
+
+        y "Run, get to the ship! Everyone, run to the ship, we have to leave now!"
+
+        "Crewmate" "But what of the others?!"
+
+        y "I'm sorry but we can't risk everyone here...I'm sorry"
+
+        "Yselle started running towards while wearing a heavy expression to the ship they were preparing just a few seconds ago."
+
+        y "I thank whatever deity guided you here Quinn, a few more seconds and you had been left behind."
+
+        q "I don't know about deities, but I'm really thankful about that."
+
+        "Just before they started boarding the ship, another loud thud could be heard, along with the sound of metal creaking."
+
+        with hpunch
+
+        "The creature had punched a hole right through the door."
+
+        y "It is breaking through, we have to go now! Hurry!" 
+
+        "Through that hole, a glowing red eye could be seen."
+
+        y "Do not look at that! Remember what happened to everyone else!"
+
+        "The ship's engine finally started, and all the people in the docks had boarded."
+
+        "Except for one person, a kid that foolishly stared at the door."
+
+        "He was frozen in place, staring at the eye."
+
+        "Crewmember" "Hey, kid! Snap out of it!"
+
+        "Crewmember" "Someone, grab him!"
+
+        y "Oh no... I...I don't..."
+
+        q "Let's save him!"
+
+        y "We... can't, we will all die if we stop now."
+
+        "The ship started to move, floating in the air, and the hole in the door had gotten bigger by the creature that was using its massive strength to break through."
+
+        jump sacrifice1
+
+    else:
+
+        y "What thing?"
+
+        y "There's a beast roaming the ship, killing just the ones that see it. Thankfully you haven't seen it."   
+
+        "Immediately after Yselle said that, a loud thud was heard from the gate, and a dent the size of a fist was in the middle of it."
+
+        with hpunch
+
+        y "What is that?!"
+
+        "Crewmember" "It's that beast! It decided to attack!"
+
+        "Crewmember" "Why now?!"
+
+        y "It somehow knows we're about to leave... we have to go now!"
+
+        q "What should I do?"
+
+        y "Run, get to the ship! Everyone, run to the ship, we have to leave now!"
+
+        "Crewmate" "But what of the others?!"
+
+        y "I'm sorry but we can't risk everyone here...I'm sorry"
+
+        "Yselle started running towards while wearing a heavy expression to the ship they were preparing just a few seconds ago."
+
+        y "I thank whatever deity guided you here Quinn, a few more seconds and you had been left behind."
+
+        q "I don't know about deities, but I'm really thankful about that."
+
+        "Just before they started boarding the ship, another loud thud could be heard, along with the sound of metal creaking."
+
+        with hpunch
+
+        "The creature had punched a hole right through the door."
+
+        y "It is breaking through, we have to go now! Hurry!" 
+
+        "Through that hole, a glowing red eye could be seen."
+
+        y "Do not look at that! Remember what happened to everyone else!"
+
+        "The ship's engine finally started, and all the people in the docks had boarded."
+
+        "Except for one person, a kid that foolishly stared at the door."
+
+        "He was frozen in place, staring at the eye."
+
+        "Crewmember" "Hey, kid! Snap out of it!"
+
+        "Crewmember" "Someone, grab him!"
+
+        y "Oh no... I...I don't..."
+
+        q "Let's save him!"
+
+        y "We... can't, we will all die if we stop now."
+
+        "The ship started to move, floating in the air, and the hole in the door had gotten bigger by the creature that was using its massive strength to break through."
+
+    menu: 
+
+        "Leave with the rest":
+
+            "Quinn would have leaped towards that kid to help him in a heartbeat, had not the recent events left a scar in his mind."
+
+            "He knew in the back of his mind that he would not be able to help him, and that he would only be able to die with him."
+
+            show gazer angry at truecenter
+            with dissolve
+
+            a "WRAAAAAAAAAAAAAAA!!!"
+
+            "They could hear the beast enraged scream, perhaps at the fact that it had lost its prey."
+
+            "Quinn was tempted to look at it, but he knew better than that by now."
+
+            "The ship finally left the docks, and seconds later, had already escaped the ship"
+
+            y "We did it...finally..."
+
+            "Tears ran down Yselle's eyes, she was visibly shaken by the escape, having to leave the kid behind. Who wouldn't be?"
+
+            "He was finally safe, but he could not help but feel like this was not a win."
+
+            "All those deaths...Logan..."
+
+            "Quinn was also shaken, and he embraced Yselle, trying to comfort her, while also crying on his own."
+
+            q "I...don't know what to do from now on..."
+
+            y "Let's just...stay like this for a while, I'm scared that if I let go, this will all be a dream and I'll be on that ship again..."
+
+            "Quinn didn't say anything, but just stayed there, holding her."
+
+            "After going through hell, they were finally safe."
+
+            "..."
+
+            "{i}Or were they{/i}"
+
+
+        "Save the kid":
+
+            jump sacrifice
 
 label sacrifice:
 
+    scene normal_docks
+    show quinn scared at right
 
+    "The moment Quinn jumped out of the ship, he could hear the voices behind me screaming at him to come back, but it was too late for that"
+
+    "He would not be able to live with himself if he didn't at least try to save the child."
+
+    "Although he knew, that it would be futile, as it was in the end."
+
+    show gazer at left
+    with flash
+    hide gazer
+
+    a "Come see."
+
+    "He tried his best not to look at the beast, that by now had already broken through the door."
+
+    "Quinn went to grab the kid, but he saw the reflection in his eyes."
+
+    "Those malevolent red eyes."
+
+    show gazer angry at left
+
+    "He could not help but look at it, and he felt his mind being torn apart."
+
+    show eye at truecenter
+    with fade
+
+    "In a mere second, Quinn was no more."
+
+    hide quinn with dramatic
+
+    "..."
+
+    "The beast had won."
+
+    with dramatic
+
+label sacrifice1:
+
+    scene normal_docks
+    show quinn at right
+
+    "The moment Quinn jumped out of the ship, he could hear the voices behind me screaming at him to come back, but it was too late for that"
+
+    "One would have thought Quinn did so to save the child."
+
+    "But that was not the case."
+    
+    show eye at truecenter
+    with dramatic
+
+    "He did so to save himself."
+
+    "He had to save himself from reality, from the pain that was existance."
+
+    "He had to meet the savior sent from heaven to redeem him."
+
+    hide eye
+    show gazer at left
+
+    "In a mere second, Quinn was no more."
+
+    hide quinn with dramatic
+
+    "..."
+
+    "The beast had won."
+
+    with dramatic
 
 label aliendock:
 
@@ -593,3 +907,80 @@ label aliendock:
     "The bodies of the crew members were scattered all over the place, and the creature was holding the body of the Yselle in its hands, missing her legs."
 
     "Logan's body was tattered and torn in a corner, skewed in an unnatural position, and it was clear that he had been killed by the creature."
+
+    "Quinn felt like something in his mind snapped."
+
+    show quinn scared at right
+
+    "He grabbed a piece of pipe that was near him, and he started to run towards the creature."
+
+    "Shadowy beasts started crawling up from the ground, trying to grab him, but he swong the pipe at them, and they disappeared."
+
+    "The continued swinging until he reached the creature, and he started to hit it with all his might."
+
+    "Why why why why why why why why"
+
+    show eye at truecenter
+    with flash
+    hide eye
+
+    "Why"
+
+    show eye at truecenter
+    with flash
+    hide eye
+
+    "Why"
+
+    show eye at truecenter
+    with flash
+    hide eye
+
+    "Why"
+
+    show eye at truecenter
+    with flash
+    hide eye
+
+    "Why"
+
+    "Why did this happen to him?"
+
+    "Why did he have to go through all of this?"
+
+    "Why did he have to suffer so much?"
+
+    scene normal_docks with fade
+
+    "Suddenly, the scene before him changed."
+
+    "There were no shadow beasts, no massive creature."
+
+    "Just the bruised bodies of other crewmembers, and Quinn's hands were red an sticky with blood."
+
+    q "What?...No..."
+
+    q "NOOOOOOO!!!"
+
+    "He started to scream, but it was cut short when he felt a hand placed in his shoulder."
+
+    "He turned back to see, perhaps someone had survived."
+
+    show gazer at left
+    with fade
+
+    "But it was no such happy ending."
+
+    show gazer angry at left
+    with redflash
+
+    q "The eyes..."
+
+    q "It was the eyes..."
+
+    "And then, the one known as Quinn was no more."
+
+    with dramatic
+
+
+
