@@ -1,3 +1,2 @@
 # BS-UO
- Balen Saga: Unchosen One
-.
+Balen Saga: Unchosen One
