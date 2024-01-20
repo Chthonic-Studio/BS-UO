@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/characters.rpy", line 4, in script
+    define player = Character(player_name, color="#c8ffc8")
+  File "game/characters.rpy", line 4, in <module>
+    define player = Character(player_name, color="#c8ffc8")
+NameError: name 'player_name' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/characters.rpy", line 4, in script
+    define player = Character(player_name, color="#c8ffc8")
+  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 2508, in execute
+    self.set()
+  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\ast.py", line 2522, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\Indatech\Desktop\renpy-8.1.3-sdk\renpy\python.py", line 1146, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/characters.rpy", line 4, in <module>
+    define player = Character(player_name, color="#c8ffc8")
+NameError: name 'player_name' is not defined
+
+Windows-10-10.0.19041 AMD64
+Ren'Py 8.1.3.23091805
+Blood of the Dragons 1.0
+Sun Jan 14 16:01:09 2024
